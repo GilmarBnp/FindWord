@@ -21,6 +21,7 @@ const Game = ({
   }
     
   return (
+    <div className="container">
     <div className="game">
       <p className="points">
        <span>Pontuação: {score}</span>
@@ -50,8 +51,8 @@ const Game = ({
           value= {letter}
           ref={letterInputRef}
           />
-          
           <button>Jogar!</button>
+          
         </form>
        </dir>
        <div className="wrongLettersContainer">
@@ -61,6 +62,8 @@ const Game = ({
           ))}
        </div>
     </div>
+    </div>
+
   )
 }
 
