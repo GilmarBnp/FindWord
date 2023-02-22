@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height: 20vh;
 }
 .game {
     display: flex;
@@ -104,12 +104,17 @@ color: #cfa000
 }
 
 @media screen and (max-device-width: 530px) {
+    
+    .game h1 {
+        font-size: 1.5em;
+    }
+    
     .letter, 
     .blankSquare {
     font-size: 70px;
     line-height: 1.5;
     border: 3px solid #111;
-    height: 44px;
+    height: 37px;
     width: 36px;
     background-color: #fff;
     color: #000;
@@ -119,6 +124,9 @@ color: #cfa000
     display: flex;
     justify-content: center;
 }
+.wordContainer {
+    max-width: 250px;
+}
 }
 
 @media screen and (max-device-width: 470px) {
@@ -127,15 +135,19 @@ color: #cfa000
     font-size: 70px;
     line-height: 1.5;
     border: 3px solid #111;
-    height: 50px;
+    height: 40px;
     width: 50px;
     background-color: #fff;
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 2.4em;
+    font-size: 1.7em;
     display: flex;
     justify-content: center;
+}
+.wordContainer {
+
+    max-width: 250px;
 }
 }
 
@@ -155,6 +167,10 @@ color: #cfa000
     display: flex;
     justify-content: center;
 }
+.wordContainer {
+
+    max-width: 400px;
+}
 }
 
 @media (min-width: 800px) and (max-device-width: 900px) {
@@ -172,6 +188,10 @@ color: #cfa000
     font-size: 2.4em;
     display: flex;
     justify-content: center;
+}
+.wordContainer {
+
+    max-width: 500px;
 }
 }
 
@@ -191,6 +211,10 @@ color: #cfa000
     display: flex;
     justify-content: center;
 }
+.wordContainer {
+
+    max-width: 500px;
+}
 }
 
 @media (min-width: 1000px) and (max-device-width: 1600px) {
@@ -208,6 +232,11 @@ color: #cfa000
     font-size: 2.4em;
     display: flex;
     justify-content: center;
+}
+
+.wordContainer {
+
+    max-width: 600px;
 }
 }
 
